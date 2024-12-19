@@ -1,0 +1,25 @@
+{
+  "name": "log",
+  "displayName": "log-highlighter",
+  "description": "Android Log Highlighter",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.96.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "ADB",
+      "aliases": ["Log File", "ADB"],
+      "extensions": ["log"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "ADB",
+      "scopeName": "others",
+      "path": "./syntaxes/ADB.tmLanguage.json"
+    }]
+  }
+}
